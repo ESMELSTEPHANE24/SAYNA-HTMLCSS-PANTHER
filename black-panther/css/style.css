@@ -297,10 +297,11 @@ margin: 190px;
 /*Troisieme partie section 3: descrition du prince*/
 
 .panther-content {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-left: 260px;
 }
 .panther-content h3{
     font-family: "Beyno";
@@ -308,6 +309,7 @@ margin: 190px;
     margin: 18px 0;
     font-weight: lighter;
     padding-top: 90px;
+    font-size: 25px;
 }
 #panther .description-prince{
     text-align: justify;
@@ -316,10 +318,11 @@ margin: 190px;
 #panther p{
     margin: 18px 0;
     font-weight: lighter;
+    font-family: "Cantarell";
 }
 
 #panther ul{
-    font-size: 10px;
+    font-size: 15px;
     font-family: "Cantarell";
     margin-bottom: 10px;
     margin-top: -15px;
@@ -328,6 +331,9 @@ margin: 190px;
 }
 
 
+.description-prince{
+    font-size: 14px;
+}
 
 
 /*Troisieme partie section 3: profile*/
@@ -338,23 +344,23 @@ margin: 190px;
 }
 
 #panther .acteur1{
-    width: 280px;
+    width: 370px;
     position: absolute;
-    top: 1220px;
-    left: 1435px;
+    top: 1310px;
+    left: 1245px;
     z-index: 1;
 }
 
 .profile-content{
     background-color: #eae6f3;
-    height: 560px;
-    width: 350px;
+    height: 720px;
+    width: 470px;
     padding: 0 55px;
     border-radius: 10px;
     position: absolute;
-    top: 1450px;
-    left: 1400px;
-    padding-top: 190px;
+    top: 1600px;
+    left: 1200px;
+    padding-top: 300px;
     line-height: 10px;
 }
 
@@ -389,7 +395,8 @@ margin: 190px;
 }
 #panther .acteur2{
     position: absolute;
-    top: 1780px;
-    width: 350px;
-    left: 825px;
+    top: 2490px;
+    width: 470px;
+    left: 1200px;
 }
+
