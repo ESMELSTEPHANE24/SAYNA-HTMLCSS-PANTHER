@@ -12,11 +12,14 @@
     --myDarkBlue:#021740;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+
 
 /*polices texte*/
 
@@ -39,11 +42,53 @@
 
 /*le background*/
 
-body {
-    background: radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,rgba(2, 23, 64, 0) 100%);
-    color: var(--blanc);
-    margin: 20px;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
 }
+
+/* Conteneur avec l'image d'arrière-plan et le dégradé radial */
+.background-container {
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%, 
+                                #11213F 0%, 
+                                #0B0B0B 39.1%, 
+                                rgba(2, 23, 64, 0.837641) 94.57%, 
+                                rgba(2, 23, 64, 0) 100%),
+                url('../background/arrière_plan.png'); /* Chemin vers votre image */
+    background-size: cover; /* Couvre toute la zone */
+    background-position: center; /* Centré */
+    background-repeat: no-repeat; /* Pas de répétition */
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container {
     width: 85%;
     margin: 0 auto;
@@ -95,13 +140,11 @@ nav{
 
 .logo-header{
     position: relative;
-    top: -25px;
     right: 10px; 
     width: 100px;
 }
 .menu{
     position: relative; 
-    top: -25px;
     word-spacing: 45px;
     right: 80px;
     font-size: 25px;
@@ -169,8 +212,8 @@ margin: 190px;
 #personnages-blackpanther{
     display: flex;
     background-color: var(--bleu-fonce);
-    height: 280px;
-    margin-top: 300px;
+    height: 320px;
+    margin-top: 330px;
     margin-left: 8.5%;
     
 }
@@ -183,12 +226,12 @@ margin: 190px;
     position: relative;
     left: 30px;
     top: -40px;
-    height: 360px;
+    height: 400px;
 }
 
 .content h3{
     position: relative;
-    top: -320px; 
+    top: -350px; 
     left: 400px;
     font-family: "beyno";
     color: var(--violet);
@@ -197,7 +240,7 @@ margin: 190px;
 
 #personnages-blackpanther .kill{
   position: relative;
-  top: -300px; 
+  top: -340px; 
   text-align: justify;
   left: 400px;
   font-size: 14px;
@@ -207,7 +250,7 @@ margin: 190px;
 .lien2 a{
     position: relative;
     color: var(--blanc);
-    top: -720px;
+    top: -800px;
     left: 400px;
 }
 /*Deuxieme partie section 2: Personnages OKOYE*/
@@ -215,13 +258,13 @@ margin: 190px;
 #personnages-blackpanther .image2{
     position: relative;
     left: 900px;
-    top: -505px;
-    height: 282px;
+    top: -546px;
+    height: 320px;
     
 }
 .description h3{
     position: relative;
-    top: -743px; 
+    top: -805px; 
     left: 1200px;
     font-family: "beyno";
     color: var(--violet);
@@ -229,7 +272,7 @@ margin: 190px;
 }
 #personnages-blackpanther .oko{
     position: relative;
-    top: -725px; 
+    top: -795px; 
     text-align: justify;
     left: 1200px;
     font-size: 14px;
@@ -239,14 +282,114 @@ margin: 190px;
 .lien3 a{
     position: relative;
     color: var(--blanc);
-    top: -290px;
+    top: -325px;
     left: 1200px;
 }
 
 
 #personnages-blackpanther .image3{
     position: relative;
-    left: 1655px;
-    top: -930px;
-    height: 280px;  
+    left: 1646px;
+    top: -1013px;
+    height: 320px;  
+}
+
+/*Troisieme partie section 3: descrition du prince*/
+
+.panther-content {
+    width: 75%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.panther-content h3{
+    font-family: "Beyno";
+    color: var(--violet);
+    margin: 18px 0;
+    font-weight: lighter;
+    padding-top: 90px;
+}
+#panther .description-prince{
+    text-align: justify;
+    margin-top: 30px;
+}
+#panther p{
+    margin: 18px 0;
+    font-weight: lighter;
+}
+
+#panther ul{
+    font-size: 10px;
+    font-family: "Cantarell";
+    margin-bottom: 10px;
+    margin-top: -15px;
+    list-style-type:"- ";
+    padding-left: 5px;
+}
+
+
+
+
+/*Troisieme partie section 3: profile*/
+
+#panther .profile{
+    width: 60%;
+    margin: 0 auto;
+}
+
+#panther .acteur1{
+    width: 280px;
+    position: absolute;
+    top: 1220px;
+    left: 1435px;
+    z-index: 1;
+}
+
+.profile-content{
+    background-color: #eae6f3;
+    height: 560px;
+    width: 350px;
+    padding: 0 55px;
+    border-radius: 10px;
+    position: absolute;
+    top: 1450px;
+    left: 1400px;
+    padding-top: 190px;
+    line-height: 10px;
+}
+
+#panther h4{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+#panther nav a{
+    display: flex;
+    padding: 10px 12px;
+    background-color: var(--violte-fonce);
+    color: var(--blanc);
+    text-decoration: none;
+    justify-content: center;
+    font-size: 10px;
+    border-radius: 5px;
+}
+
+#panther .profile p {
+    color: var(--bleu-fonce);
+    font-weight:900;
+    font-size: 12px;
+    
+}
+
+#panther span {
+    color: var(--bleu-roi);
+}
+#panther .parenthèse{
+    font-size: 10px;
+}
+#panther .acteur2{
+    position: absolute;
+    top: 1780px;
+    width: 350px;
+    left: 825px;
 }
