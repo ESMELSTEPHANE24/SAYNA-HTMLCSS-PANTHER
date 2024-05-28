@@ -64,31 +64,6 @@ body, html {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
     width: 85%;
     margin: 0 auto;
@@ -366,8 +341,10 @@ margin: 190px;
 
 #panther h4{
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
+    position: relative;
+    top: -35px;
 }
 #panther nav a{
     display: flex;
@@ -376,8 +353,10 @@ margin: 190px;
     color: var(--blanc);
     text-decoration: none;
     justify-content: center;
-    font-size: 10px;
+    font-size: 13px;
     border-radius: 5px;
+    position: relative;
+    top: -35px;
 }
 
 #panther .profile p {
@@ -389,6 +368,7 @@ margin: 190px;
 
 #panther span {
     color: var(--bleu-roi);
+    font-size: 18px;
 }
 #panther .parenthèse{
     font-size: 10px;
@@ -400,3 +380,381 @@ margin: 190px;
     left: 1200px;
 }
 
+/*Quatrieme partie section 4: formulaire*/
+
+.formulaire {
+    background: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+.formulaire {
+    background-image: url("../background/Pantherhome7.png");
+    height: 950px;  
+}
+
+.formulaire-forme{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85) 15%, rgba(255, 255, 255, 0.08));
+    margin: 230px 0 55px;
+    width: 50%;
+    border-radius: 210px ;
+    margin-right: 50px;
+    border: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formulaire p{
+    color: black;
+    text-align: center;
+    font-family: cantarell;
+    padding: 90px;
+    font-size: 18px;
+    margin-top: -30px;
+}
+
+.formulaire-forme h2{
+    color: black;
+    font-family: cantarell;
+    font-size: 50px;
+    text-align: center;
+    margin-top: -100px;
+}
+
+
+
+
+
+/*textarea du formulaire */
+
+.formulaire-forme input {
+    position: relative;
+    width: 235%;
+    height: 55px;
+    border-radius: 38px;
+    padding: 5px 20px;
+    background-color: transparent;
+    border: solid rgba(0, 0, 0, 0.5) 1px;
+    margin-bottom: 10px;
+    left: -60%; 
+    font-size: 15px;
+    top: -20px;
+    
+}
+
+.formulaire-forme input,
+.formulaire-forme textarea {
+    margin: 5px 0;
+}
+
+textarea {
+    width: 182%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: solid rgba(0, 0, 0, 0.5) 1px;
+    position: relative;
+    left: -35%;
+    height: 225px;
+    top: -15px;
+    
+}
+
+.formulaire-forme input::placeholder,
+.formulaire-forme textarea::placeholder {
+    color: black;
+    font-family: cantarell;
+    font-size: 16px;
+}
+
+/* Media queries*/
+
+@media screen and (max-width: 600px) {
+    .formualire-forme input {
+        width: 100%;
+        height: 30px;
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+
+    .formualire-forme textarea {
+        width: 100%;
+        border-radius: 10px;
+        padding: 5px 15px;
+    }
+}
+
+
+/* Boutons submit du formulaire */
+
+.formulaire-forme button {
+    
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 38px;
+    background-color: var(--mySoftPink);
+    font-weight: bolder;
+    font-size: 12px;
+}
+
+.submitBtn:hover {
+    filter: drop-shadow(0 0 10px var(--mySoftPink)) ;
+}
+
+/* Popup Box */
+
+#popupBox {
+    display: none;
+    padding: 20px;
+    background-color:#3d2da691;
+    color: white;
+    margin: 15px;
+    border-radius: 38px;
+  }
+  
+   /* Popup Box button */
+
+   .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover {
+    color: black;
+  }
+
+
+
+  /* Cinquieme partie: footer */
+
+.footers p, 
+.footers a,
+.footers li {
+    font-family: Cantarell;
+    font-size: 10px;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+footer h3 {
+    font-family: Cantarell;
+    font-size: 14px; 
+    letter-spacing: 3px;
+    margin: 5px 0 10px;
+}
+
+footer {
+    background: url(../background/back_footer.png) no-repeat;
+    background-size: 100% 100%;
+    
+    
+}
+
+
+
+
+.footers {
+    margin: 200px 10% 50px;
+}
+
+
+/* Media queries pour les petites écrans */
+
+@media screen and (max-width: 700px) {
+    .footerDiv {
+        margin: 100px 10px 50px;
+    }
+
+    .findUs figure{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .findUs img {
+        width: 5vw;
+    }
+    
+}
+
+
+/* grille */
+
+.footers² {
+    display: grid;
+    grid-template-areas: 
+        "logo logo pages findUs"
+        "logo logo pol pol";
+    gap: 15px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 400px) {
+    .footerDiv {
+        display: grid;
+        grid-template-areas: 
+            "logo logo"
+            "pages findUs" 
+            "pol pol";
+        gap: 15px;
+    }
+}
+
+/* Media Query */
+@media screen and (max-width: 400px) {
+    .footerDiv {
+        display: grid;
+        grid-template-areas: 
+            "logo logo"
+            "pages findUs" 
+            "pol pol";
+        gap: 15px;
+    }
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.pages {
+    grid-area: pages;
+}
+
+.findUs {
+    grid-area: findUs;
+}
+
+.pol {
+    grid-area: pol;
+}
+
+
+/* élément du footer */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    }
+    
+    .logo-img {
+        width: 14vw;
+        height: 25vw;
+        min-width: 150px;
+        min-height: 150px;
+        background: url(../background/footer1.png) no-repeat;
+        background-size: contain;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        position: relative;
+        top: 240px;
+    }
+    .logo-img{
+        position: relative;
+        margin-left: 400px;
+    }
+
+    .logo-img a{
+        position: relative;
+        top: -90px;
+    }
+
+    
+    .logo-image {
+        position: relative;
+        right: 2vw;
+        width: 12vw;
+        min-width: 75px;
+    }
+    
+    .logo-img:hover {
+        transform: scale(110%);
+    }
+    
+    .pages a:hover {
+        text-decoration: underline;
+    }
+    
+    .retrouvez {
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+        align-items: center;
+    }
+    
+    .retrouvez img {
+        max-width: 60px;
+        margin: 0 5px;
+        
+    }
+    .retrouvez img{
+        position: relative;
+        left: 500px;
+        top: -350px;
+    }
+    
+    .retrouvez img:hover {
+        transform: scale(110%);
+    }
+    
+    .Bas-de-page {
+        display: flex;
+        align-items: center;
+    }
+
+
+    .sociaux img{
+        position: relative;
+        top: -380px;
+    }
+
+    
+
+    .retrouvez h3{
+        position: relative;
+        top: -390px;
+        font-size: 25px;
+        color: #d6ced6;
+        margin-left: 1000px;
+       
+    }
+
+    .pages h3{
+        position: relative;
+        top: -280px;
+        font-size: 25px;
+        margin-left: 800px;
+        color: #d6ced6;
+    }
+   
+
+
+    .pages a{
+        position: relative;
+        top: -280px;
+        margin-left: 800px;
+        color: #d6ced6;
+        font-size: 18px;
+    }
+
+    .Bas-de-page p{
+        position: relative;
+        top: -280px;
+        font-size: 15px;
+        color: #d6ced6;
+        margin-left: 800px;
+    }
