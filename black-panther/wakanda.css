@@ -1,0 +1,449 @@
+:root {
+    --bleu-fonce:#021740;
+    --bleu-roi:#07338c;
+    --blanc: #ffffffe1;
+    --violet:#9E91B7;
+    --violte-fonce:#3D2DA6;
+    --rose-pale:#F2CEF2;
+}
+@font-face {
+    font-family: "Panthera";
+    src: url(assets/Illustrations\ +\ Logo/Police/Panthera/PantheraRegular-MVZ9J.ttf);
+}
+@font-face {
+    font-family: "Wakanda";
+    src: url(assets/Illustrations\ +\ Logo/Police/Wakanda/WakandaFanther-JRpp7.ttf);
+}
+@font-face {
+    font-family: "Beyno";
+    src: url(assets/Illustrations\ +\ Logo/Police/Beyno/._BEYNO.ttf);
+}
+@font-face {
+    font-family: "Cantarell";
+    src: url(assets/Illustrations\ +\ Logo/Police/Cantarell/Cantarell-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    max-width: 1400px; 
+    margin: 0 auto; 
+    overflow-x: hidden;
+    max-height: 1000vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;     
+}
+
+
+
+
+body {
+    background: radial-gradient(126.67% 350.28% at -21.35% 0%,#11213F 0%, #0B0B0B 39.1%, rgba(2, 23, 64, 0.837641) 94.57%,rgba(2, 23, 64, 0.753) 100%);
+    color: var(--blanc);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    color: white;
+    
+}
+
+
+
+.container {
+    width: 85%;
+    margin: 0 auto;
+    
+}
+
+p, ul{
+    font-size: 11px;
+    font-family: "Cantarell";
+}
+
+/*Design du header*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.menu a {
+    text-decoration: none;
+    color: var(--blanc);
+    font-size: 14px;
+    position: relative;
+    right: 40px;
+}
+.menu {
+    display: flex;
+    gap:35px;
+    font-family: "Beyno";
+    font-size: 15px;
+}
+.logo img {
+    width: 90px;
+    
+
+}
+.wakanda a {
+    color: var(--violet);
+    text-decoration: underline;
+}
+
+/*Première section: wakanda forever*/
+
+
+
+.description {
+    background-image: url("../background/Pantherwakanda1.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+    margin-top: 20px;
+    padding: 220px 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: -5%;
+    margin-right: -4%;
+    
+ 
+}
+
+.description h1{
+    font-size: 45px;
+    font-family: "Beyno";
+    padding: 10px 0;
+    font-weight: lighter;
+    color: var(--violet);
+    padding-right: -80px;
+}
+
+.description .content {
+    width: 1300px; 
+}
+
+
+ #panther h1{
+    position: relative;
+    top: -30px;
+}
+
+#panther h2{
+    position: relative;
+    top: -20px;
+    margin-right: 40px;
+    font-size: 22px;
+    letter-spacing: 6px;
+}
+
+
+.description h2{
+    font-family: "Wakanda forever";
+    font-size: 30px;
+    color: var(--violet);
+}
+
+.description p{
+    padding-top: 30px;
+    width: 380px;
+    text-align: justify;
+    font-weight: lighter;
+}
+
+
+/*Deuxième section: Origine et description*/
+
+#story {
+    background-image: url("../background/Pantherwakanda2.png");
+    background-size: 1100px;
+    background-repeat: no-repeat;
+    background-position: 100px -60px;
+    padding: 100px 0;
+    position: relative;
+    top: -40px;
+}
+
+#story p{
+width: 450px;
+font-size: 10px;
+}
+
+
+#story .story-content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    text-align: justify;
+    gap: 150px;
+}
+
+
+
+#story h3{
+    font-family: "Beyno";
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 30px 0;
+    color: var(--violet);
+}
+
+#story p ,#story ul{
+    padding-bottom: 15px;
+    
+}
+
+#story .video{
+    width: 200px;
+    padding: 50px 0;
+   
+}
+
+.stories2 p{
+    position: relative;
+    margin-left: -85px;
+    top: 15px;
+}
+.stories2 ul{
+    position: relative;
+    margin-left: -70px;
+}
+
+.stories2 h3{
+    position: relative;
+    margin-left: -80px;
+}
+
+.stories2 img{
+    position: relative;
+    margin-left: -50px;
+    width: 95%; 
+    height: auto;
+}
+
+/*Troisième section: footer*/
+
+.footers p, 
+.footers a,
+.footers li {
+    font-family: Cantarell;
+    font-size: 10px;
+    list-style: none;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+footer h3 {
+    font-family: Cantarell;
+    font-size: 14px; 
+    letter-spacing: 3px;
+    margin: 5px 0 10px;
+}
+
+#footer{
+    background-image: url("../background/back_footer.png");
+    height: 500px;
+    margin-top: 150px;
+}
+
+
+
+
+
+.footers {
+    position: relative;
+    margin: 100px 10% 20px;
+    height: 370px;
+    
+}
+
+/* Media queries pour les petites écrans */
+
+@media screen and (max-width: 700px) {
+    .footerDiv {
+        margin: 100px 10px 50px;
+    }
+
+    .findUs figure{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .findUs img {
+        width: 5vw;
+    }
+    
+}
+
+
+/* grille */
+
+.footers² {
+    display: grid;
+    grid-template-areas: 
+        "logo logo pages findUs"
+        "logo logo pol pol";
+    gap: 15px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 400px) {
+    .footerDiv {
+        display: grid;
+        grid-template-areas: 
+            "logo logo"
+            "pages findUs" 
+            "pol pol";
+        gap: 15px;
+    }
+}
+
+/* Media Query */
+@media screen and (max-width: 400px) {
+    .footerDiv {
+        display: grid;
+        grid-template-areas: 
+            "logo logo"
+            "pages findUs" 
+            "pol pol";
+        gap: 15px;
+    }
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.pages {
+    grid-area: pages;
+}
+
+.findUs {
+    grid-area: findUs;
+}
+
+.pol {
+    grid-area: pol;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    }
+
+
+
+    /*Troisième section:design footer*/
+
+    #footer{
+        background-image: url("../background/back_footer.png");
+        height: 500px;
+        margin-top: 150px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+    }
+    .picture {
+        width: 180px;
+        position: relative;
+        top: 200px;
+        left: 200px;
+    }
+    .pictures {
+        width: 80px;
+        position: relative;
+        top: 100px;
+        left: 70px;
+    }
+    .pictures:hover{
+        filter: invert(50%) sepia(100%) saturate(7440%) hue-rotate(239deg) brightness(87%) contrast(100%);
+    }
+    .footer-logo:hover {
+        transform: scale(1.1);
+    }
+    
+    .footer-content {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        top: 190px;
+        left: 340px;
+        width: 500px;
+        justify-content: space-between;
+    }
+
+ 
+
+    #footer h3 {
+        font-family: "Cantarell";
+        font-size: 13px;
+        letter-spacing: 1px;
+        color: #f1e3f1;
+        
+    }
+.retrouver h3{
+    position: relative;
+    right: 60px;
+}
+
+
+    #footer .pages {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        
+    }
+    
+    #footer .pages a{
+        text-decoration: none;
+        color: var(--blanc);
+        padding: 5px 0;
+        font-weight: lighter;
+        font-size: 11px;
+        position: relative;
+        top: -20px;
+    }
+    #footer .pages a:hover{
+        text-decoration: underline;
+    }
+    .nous{
+        padding: 25px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+    .nous img{
+        width: 30px;
+        position: relative;
+        top: -20px;
+        left: -60px;
+    }
+    .nous img:hover{
+        transform: scale(1.1);
+    }
+    .down {
+        position: relative;
+        top: 150px;
+        display: flex;
+        width: 500px;
+        left: 600px;
+        gap: 18px;
+        flex-direction: column;
+    }
+
