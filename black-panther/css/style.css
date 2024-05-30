@@ -56,10 +56,10 @@ body, html {
                                 #0B0B0B 39.1%, 
                                 rgba(2, 23, 64, 0.837641) 94.57%, 
                                 rgba(2, 23, 64, 0) 100%),
-                url('../background/arrière_plan.png'); /* Chemin vers votre image */
-    background-size: cover; /* Couvre toute la zone */
-    background-position: center; /* Centré */
-    background-repeat: no-repeat; /* Pas de répétition */
+                url('../background/arrière_plan.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     color: white;
 }
 
@@ -68,8 +68,6 @@ body, html {
     width: 85%;
     margin: 0 auto;
 }
-
-
 
 
 /*design bars*/
@@ -122,19 +120,22 @@ nav{
     position: relative; 
     word-spacing: 45px;
     right: 80px;
-    font-size: 25px;
+    font-size: 20px;
 }
-.texte1{
-    color: var(--blanc);
+.accueil{
+    color: var(--mySoftViolet);
     font-family: beyno regular;
-
 }
-.texte2{
+
+
+
+
+.wakanda{
     text-decoration: none;
     color: var(--blanc);
     font-family: beyno regular;
 }
-.texte3{
+.enigme{
     text-decoration: none;
     color: var(--blanc);
     font-family: beyno regular;
@@ -558,11 +559,8 @@ footer h3 {
 footer {
     background: url(../background/back_footer.png) no-repeat;
     background-size: 100% 100%;
-    
-    
+      
 }
-
-
 
 
 .footers {
@@ -644,117 +642,115 @@ footer {
 
 /* élément du footer */
 
-.logo {
+#footer{
+    background-image: url("../background/back_footer.png");
+    height: 500px;
+    margin-top: 150px;
+}
+.footer {
     display: flex;
-    justify-content: center;
-    }
+    flex-direction: row;
+}
+.picture {
+    width: 280px;
+    position: relative;
+    top: 140px;
+    left: 380px;
+}
+.pictures {
+    width: 120px;
+    position: relative;
+    top: -18px;
+    left: 180px;
+}
+.pictures:hover{
+    filter: invert(50%) sepia(100%) saturate(7440%) hue-rotate(239deg) brightness(87%) contrast(100%);
+}
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 140px;
+    left: 650px;
+    width: 500px;
+    justify-content: space-between;
     
-    .logo-img {
-        width: 14vw;
-        height: 25vw;
-        min-width: 150px;
-        min-height: 150px;
-        background: url(../background/footer1.png) no-repeat;
-        background-size: contain;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: nowrap;
-        position: relative;
-        top: 240px;
-    }
-    .logo-img{
-        position: relative;
-        margin-left: 400px;
-    }
-
-    .logo-img a{
-        position: relative;
-        top: -90px;
-    }
-
+}
+#footer h3 {
+    font-family: "Cantarell";
+    font-size: 17px;
+    letter-spacing: 5px;
     
-    .logo-image {
-        position: relative;
-        right: 2vw;
-        width: 12vw;
-        min-width: 75px;
-    }
+}
+
+.titre h3{
+    position: relative;
+    right: 150px;
     
-    .logo-img:hover {
-        transform: scale(110%);
-    }
+}
+
+.pages .texte1{
+    position: relative;
+    right: 150px;
+    font-family: "Cantarell";
+}
+
+.pages .texte2{
+    position: relative;
+    right: 150px;
+    font-family: "Cantarell";
+}
+
+
+#footer .pages {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
     
-    .pages a:hover {
-        text-decoration: underline;
-    }
-    
-    .retrouvez {
-        display: flex;
-        flex-direction: column;
-        justify-content: top;
-        align-items: center;
-    }
-    
-    .retrouvez img {
-        max-width: 60px;
-        margin: 0 5px;
-        
-    }
-    .retrouvez img{
-        position: relative;
-        left: 500px;
-        top: -350px;
-    }
-    
-    .retrouvez img:hover {
-        transform: scale(110%);
-    }
-    
-    .Bas-de-page {
-        display: flex;
-        align-items: center;
-    }
+}
+
+#footer .pages a{
+    text-decoration: none;
+    color: var(--blanc);
+    padding: 5px 0;
+    font-weight: lighter;
+}
+#footer .pages a:hover{
+    text-decoration: underline;
+}
+.nous{
+    padding: 25px 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.nous img{
+    width: 45px;
+}
+.nous img:hover{
+    transform: scale(1.1);
+}
+.down {
+    position: relative;
+    top: 75px;
+    display: flex;
+    width: 600px;
+    left: 900px;
+    gap: 18px;
+    flex-direction: column;
+    top: 70px;
+}
 
 
-    .sociaux img{
-        position: relative;
-        top: -380px;
-    }
-
-    
-
-    .retrouvez h3{
-        position: relative;
-        top: -390px;
-        font-size: 25px;
-        color: #d6ced6;
-        margin-left: 1000px;
-       
-    }
-
-    .pages h3{
-        position: relative;
-        top: -280px;
-        font-size: 25px;
-        margin-left: 800px;
-        color: #d6ced6;
-    }
-   
 
 
-    .pages a{
-        position: relative;
-        top: -280px;
-        margin-left: 800px;
-        color: #d6ced6;
-        font-size: 18px;
-    }
 
-    .Bas-de-page p{
-        position: relative;
-        top: -280px;
-        font-size: 15px;
-        color: #d6ced6;
-        margin-left: 800px;
-    }
+
+
+
+
