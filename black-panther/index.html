@@ -3,32 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black-Panther</title>
-    <link rel="stylesheet" href="../black-panther/css/style.css">
+    <title>Black-Panther-acceuil</title>
+    <link rel="stylesheet" href="../black-panther/css/style.css">  
 </head>
 <body>
-
     <div class="background-container">
-        
-    
-
     <div class="left-bar1"></div>
     <div class="left-bar2"></div>
     <div class="social-entete"> 
-        <a href="">
+        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
             <img src="../black-panther/Illustrations + Logo/All pages/icon_facebook.png" alt="">
         </a>
-        <a href="">
+        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
             <img src="../black-panther/Illustrations + Logo/All pages/icon_instagram.png" alt="">
         </a>
-        <a href="">
+        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
             <img src="../black-panther/Illustrations + Logo/All pages/icon_twitter.png" alt="">
         </a>
-        <a href="">
+        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
             <img src="../black-panther/Illustrations + Logo/All pages/icon_tiktok.png" alt="">
         </a>
-        </div>
-        
+        </div>    
     <header>
 <section id="acceuil-panther1">
     <nav class="container">
@@ -37,13 +32,12 @@
         </div>
         <div class="menu">
             <div>
-                <a class="texte1" href="accueil">ACCUEIL</a>
-                <a class="texte2" href="wakanda">WAKANDA</a>
-                <a class="texte3" href="enigme">ENIGME</a>
+                <a class="accueil" href="index.html">ACCUEIL</a>
+                <a class="wakanda" href="wakanda.html">WAKANDA</a>
+                <a class="enigme" href="enigme.html">ENIGME</a>
             </div>
     </nav>
 </section>
-
 </header>
         <main>
 
@@ -115,6 +109,7 @@
 </section>
 
 <!--Troisieme partie section 3: descrition du prince-->
+
 <section id="panther">
     <div class="panther-content">
              <div class="description-prince">
@@ -216,86 +211,84 @@ mesures mortelles de les neutraliser.
                  <img class="acteur2" src="../black-panther/Illustrations + Logo/Accueil/Pantherhome6.png" alt="acteur-panther2">
              </div>
     </div>
-
-
-
 </section>
 
 <!--Quatrieme partie section 4: formulaire-->
 
 <section class="formulaire">
-     <form action="" class="formulaire-forme">
-
-             <div>
-                <p>Besoin de l’intervention du Wakanda ?</p>
-             </div>
-             <div>
-                <h2>Contactez nous !</h2>
-             </div>
-             <div>
-                <input type="text" name="Nom" id="Nom" placeholder="Nom" required>
-            </div>
-            <div>
-                <input type="text" name="Email" id="Email" placeholder="Email" required>
-            </div>
-            <div>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
-            </div>
-            <button type="submit" class="submitBtn" id="submitBtnForm">ENVOYER</button>
-                 
-            <!--Quatrieme partie section 4: Popup-->
-
-            <div class="alert" id="popupBox">
-                <span class="closebtn" onclick="this.parentElement.style.display='none';"></span>
-                Merci! Votre message a bien été envoyé si tous les champs ont correctement été renseignés
-            </div>
-     </form>
+    <form action="" class="formulaire-forme" id="contactForm">
+        <div>
+            <p>Besoin de l’intervention du Wakanda ?</p>
+        </div>
+        <div>
+            <h2>Contactez nous !</h2>
+        </div>
+        <div>
+            <input type="text" name="Nom" id="Nom" placeholder="Nom" required>
+        </div>
+        <div>
+            <input type="text" name="Email" id="Email" placeholder="Email" required>
+        </div>
+        <div>
+            <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message" required></textarea>
+        </div>
+        <button type="submit" class="submitBtn" id="submitBtnForm">ENVOYER</button>
+        <!-- Quatrième partie section 4: Popup -->
+        <div class="alert" id="popupBox">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+            Votre message a bien été envoyé. Merci de nous avoir visité !
+        </div>
+    </form>
 </section>
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Empêcher le formulaire de se soumettre normalement
+        document.getElementById('popupBox').style.display = 'block'; // Afficher la Popup Box
+    });
+</script>
         </main>
     
-    <footer>
+    
         <!--Cinquieme partie: footer-->
 
-    <div class="footers">
-       <div class="logo-footer">
-        <div class="logo-img">
-            <a href="index.html">
-                <img src="../black-panther/Illustrations + Logo/All pages/footer2.png" alt="sayna-marvel">
-            </a>
-        </div>
-        <div class="pages">
-            <h3>PAGES</h3>
-            <ul>
-                <li><a href="#">A propos</a></li>
-                <li><a href="wakanda.html">Wakanda</a></li>
-            </ul>
-        </div>
-        <div class="retrouvez">
-            <h3>RETROUVEZ NOUS</h3>
-            <div class="sociaux">
-                <a href="">
-                    <img src="../black-panther/Illustrations + Logo/All pages/footer3.png" alt="FB">
-                </a>
-                <a href="">
-                    <img src="../black-panther/Illustrations + Logo/All pages/footer4.png" alt="instg">
-                </a>
-                <a href="">
-                    <img src="../black-panther/Illustrations + Logo/All pages/footer5.png" alt="tw">
-                </a>
-                <a href="">
-                    <img src="../black-panther/Illustrations + Logo/All pages/footer6.png" alt="tik">
-                </a>
-            </div>   
-        </div>
-    
-        <div class="Bas-de-page">
-            <p>2022 Tous droits réservés . Politique de confidentialité . Conditions d'utilisation</p>
-        </div>
-    </div>
-</div>  
-
- 
-</footer>
+        <footer id="footer">
+            <div class="footer">
+                <div class="footer-logo">
+                    <img src="../black-panther-wakanda/background/footer1.png" alt="" class="picture">
+                    <a href="accueil.html"><img src="../black-panther-wakanda/background/footer2.png" alt="" class="pictures"></a>
+                </div>
+                <div class="footer-content">
+                       <div class="titre">
+                        <h3>PAGES</h3>
+                        <div class="pages">
+                            <a class="texte1" href="#">A propos</a>
+                            <a class="texte2" href="wakanda.html">Wakanda</a>
+                        </div>
+                       </div>
+                       <div class="entete">
+                        <h3>RETROUVEZ NOUS</h3>
+                        <div class="nous">
+                            <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                <img src="../black-panther-wakanda/Illustrations + Logo/All pages/footer3.png" alt="">
+                            
+                            <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                <img src="../black-panther-wakanda/Illustrations + Logo/All pages/footer4.png" alt="">
+                            </a>
+                            <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                <img src="../black-panther-wakanda/Illustrations + Logo/All pages/footer5.png" alt="">
+                            </a>
+                            <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                                <img src="../black-panther-wakanda/Illustrations + Logo/All pages/footer5.png" alt="">
+                            </a>
+                        </div>
+                       </div>
+                </div>
+            </div>
+            <div class="down">
+                <p>2022 Tous droits réservés . Politique de confidentialité . Conditions d'utilisation</p>
+            </div>
+     </footer>   
 </div>
+
 </body>
 </html>
