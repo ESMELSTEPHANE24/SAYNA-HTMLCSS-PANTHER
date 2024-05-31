@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>black-panther-enigme</title>
+    <link rel="stylesheet" href="../black-panther-enigme/css/enigme.css">
+</head>
+<body>
+    <header>
+        <section id="acceuil-panther1">
+            <nav class="container">
+                <div class="logo-header">
+                    <a href="enigme.html"><img src="../black-panther-enigme/background/footer2.png" alt="Logo de SAYNA et MARVEl"></a>
+                </div>
+                <div class="menu">
+                    <div>
+                        <a class="accueil" href="index.html">ACCUEIL</a>
+                        <a class="wakanda" href="wakanda.html">WAKANDA</a>
+                        <a class="enigme" href="enigme.html">ENIGME</a>
+                    </div>
+            </nav>
+        </section>
+        </header>
+
+ <!--Première section: enigme-->
+
+    <main>
+       <section id="personnages-enigme">
+            <div class="women">
+                <div class="women-img">
+                    <img src="../black-panther-enigme/Illustrations + Logo/Enigme/Pantherenigme1.png" alt="">
+                </div>
+                <div class="women-description">
+                    <div>
+                        <h1>RELEVE LES DEFIS DES DORA MILAJE</h1>
+                    </div>
+                    <div>
+                        <img src="../black-panther-enigme/Illustrations + Logo/Enigme/Pantherenigme2.png" alt="" class="img1">
+                        <div class="content">
+                            <p>Les Dora Milaje sont de farouches guerrières d’élite. Elles constituent la garde 
+                                rapprochée du Roi en personne et ont de nombreuses occasions de lui sauver la 
+                                vie. Leur Générale, Okoyé est également la dirigeante des forces armées et des 
+                                renseignements wakandais.
+                            </p>
+                            <p>Prouve ton talent d’espion et déchiffre cette réplique d’Okoyé écrite en Wakandais, 
+                                et apprend par la même occasion la première valeur d’une Dora Milaje !
+                            </p>
+                        </div>
+                        <img src="../black-panther-enigme/Illustrations + Logo/Enigme/Pantherenigme3.png" alt="" class="img2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ <!--Deuxième section: formulaire-->
+
+
+ <section id="formulaire">
+    <p class="citation">" SI JE SUIS FIDELE C’EST A CE TRONE 
+        PEU IMPORTE QUI MONTE DESSUS "</p>
+        <div class="formulaire-content">
+            <div class="transcription">
+                <p class="content1">Voici la transicription de l’alphabet :</p>
+                <p class="alphabet"><span>A</span> = A ; <span>B</span> = B ; <span>C</span> = C ; <span>D</span> = D ; <span>E</span> = E ; <span>F</span> = F ; <span>G</span> = G ; <span>H</span> = H ; <span>I</span> = I ; <span>J</span> = J 
+
+                    <span>K</span> = K ; <span>L</span> = L ; <span>M</span> = M ; <span>N</span> = N ; <span>O</span> = O ; <span>P</span> = P ; <span>Q</span> = Q  ; <span>R</span> = R ; <span>S</span> = S ; <span>T</span>=T
+                    
+                    <span>U</span> = U ; <span>W</span> = W ; <span>X</span> = X ; Y = <span>Y</span>  ; <span>Z</span> = Z </p>
+                <div class="content2">
+                    <label for="reponse">Alors, as tu la réponse ?</label>
+                    <input type="texte" placeholder="Réponse">
+                    <input type="submit" value="ENVOYER" id="submitBtn">
+                </div>
+
+                
+            </div>
+
+            <div class="contents">
+                <img src="../black-panther-enigme/Illustrations + Logo/Enigme/Pantherenigme2.png" alt="" class="img3">
+                <div class="texte">
+                    <p class="texte1"> Le savais tu ?</p>
+                    <p>Plusieurs sources s’entendent pour dire que la lettre la plus utilisée en français est 
+                    la lettre E. En pourcentage de fréquence, la lettre est utilisée à 14% dans une 
+                    phrase. Et si tu regardais quel symbole revient le plus souvent ?</p>
+                </div>
+            </div>
+        </div>
+
+ <!-- Quatrième partie section 4: Popup -->
+
+ <div class="alert" id="popupBox">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    Votre message a bien été envoyé. Merci de nous avoir visité !
+</div>
+
+</section>
+
+<script>
+    document.getElementById('submitBtn').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        document.getElementById('popupBox').style.display = 'block';
+    });
+</script>
+
+    </main>
+
+    <!--Troisième section: footer-->
+
+    <footer id="footer">
+        <div class="footer">
+            <div class="footer-logo">
+                <img src="../black-panther-wakanda/background/footer1.png" alt="" class="picture">
+                <a href="accueil.html"><img src="../black-panther-wakanda/background/footer2.png" alt="" class="pictures"></a>
+            </div>
+            <div class="footer-content">
+                   <div class="titre">
+                    <h3>PAGES</h3>
+                    <div class="pages">
+                        <a class="texte1" href="accueil.html">A propos</a>
+                        <a class="texte2" href="wakanda.html">Wakanda</a>
+                    </div>
+                   </div>
+                   <div class="retrouver">
+                    <h3>RETROUVEZ NOUS</h3>
+                    <div class="nous">
+                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                            <img src="../black-panther-wakanda/Illustrations + Logo/All pages/footer3.png" alt="">
+                        </a>
+                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                            <img src="../black-panther-wakanda/Illustrations + Logo/All pages/footer4.png" alt="">
+                        </a>
+                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                            <img src="../black-panther-wakanda/Illustrations + Logo/All pages/footer5.png" alt="">
+                        </a>
+                        <a href="http://www.marvel-cineverse.fr/pages/mcu/encyclopedie/personnages/black-panther.html">
+                            <img src="../black-panther-wakanda/Illustrations + Logo/All pages/footer5.png" alt="">
+                        </a>
+                    </div>
+                   </div>
+            </div>
+        </div>
+        <div class="down">
+            <p>2022 Tous droits réservés . Politique de confidentialité . Conditions d'utilisation</p>
+        </div>
+ </footer>
+</body>
+</html>
