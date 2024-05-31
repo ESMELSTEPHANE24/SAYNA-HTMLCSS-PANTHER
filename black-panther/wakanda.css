@@ -67,6 +67,48 @@ p, ul{
     font-family: "Cantarell";
 }
 
+
+/*fonctionnalités header*/
+
+
+header a {
+    text-decoration: none;
+    color: #9E91B7 ;
+    font-weight: bold;
+    margin: 0 15px;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+}
+header a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+header a:hover::after {
+    width: 100%;
+}
+header a.active {
+    color: violet;
+}
+header a.active::after {
+    width: 100%;
+    background: violet;
+}
+
+
+
+
+
+
+
+
 /*Design du header*/
 
 nav{
@@ -80,23 +122,25 @@ nav{
     color: var(--blanc);
     font-size: 14px;
     position: relative;
-    right: 40px;
+    right: 50px;
 }
 .menu {
     display: flex;
+    word-spacing: 20px;
     gap:35px;
     font-family: "Beyno";
     font-size: 15px;
 }
-.logo img {
-    width: 90px;
-    
 
+.logo-header img{
+    position: relative;
+    width: 90px;
 }
-.wakanda a {
-    color: var(--violet);
-    text-decoration: underline;
+
+#acceuil-panther1 .wakanda{
+    color: #9E91B7;
 }
+
 
 /*Première section: wakanda forever*/
 
@@ -371,8 +415,15 @@ footer h3 {
         left: 70px;
     }
     .pictures:hover{
-        filter: invert(50%) sepia(100%) saturate(7440%) hue-rotate(239deg) brightness(87%) contrast(100%);
+        filter: invert(50%) sepia(50%) saturate(1440%) hue-rotate(239deg) brightness(87%) contrast(100%) ;
     }
+
+    .logo-header:hover{
+        filter: invert(50%) sepia(50%) saturate(1440%) hue-rotate(239deg) brightness(87%) contrast(100%) ;
+        
+    }
+
+
     .footer-logo:hover {
         transform: scale(1.1);
     }
