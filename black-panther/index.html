@@ -28,7 +28,7 @@
 <section id="acceuil-panther1">
     <nav class="container">
         <div class="logo-header">
-            <a href="acceuil.html"><img src="../black-panther/Illustrations + Logo/All pages/footer2.png" alt="Logo de SAYNA et MARVEl"></a>
+            <a href="index.html"><img src="../black-panther/Illustrations + Logo/All pages/footer2.png" alt="Logo de SAYNA et MARVEl"></a>
         </div>
         <div class="menu">
             <div>
@@ -233,7 +233,9 @@ mesures mortelles de les neutraliser.
             <textarea name="Message" id="Message" cols="30" rows="10" placeholder="Message" required></textarea>
         </div>
         <button type="submit" class="submitBtn" id="submitBtnForm">ENVOYER</button>
+
         <!-- Quatrième partie section 4: Popup -->
+
         <div class="alert" id="popupBox">
             <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
             Votre message a bien été envoyé. Merci de nous avoir visité !
@@ -242,8 +244,8 @@ mesures mortelles de les neutraliser.
 </section>
 <script>
     document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Empêcher le formulaire de se soumettre normalement
-        document.getElementById('popupBox').style.display = 'block'; // Afficher la Popup Box
+        event.preventDefault(); 
+        document.getElementById('popupBox').style.display = 'block';
     });
 </script>
         </main>
@@ -289,6 +291,5 @@ mesures mortelles de les neutraliser.
             </div>
      </footer>   
 </div>
-
 </body>
 </html>
