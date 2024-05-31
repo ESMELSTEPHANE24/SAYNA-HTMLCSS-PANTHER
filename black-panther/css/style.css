@@ -18,7 +18,40 @@
     box-sizing: border-box;
 }
 
+/*fonctionnlité header*/
 
+
+
+header a {
+    text-decoration: none;
+    color: #9E91B7 ;
+    font-weight: bold;
+    margin: 0 15px;
+    position: relative;
+    display: inline-block;
+    padding: 5px 0;
+}
+header a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+header a:hover::after {
+    width: 100%;
+}
+header a.active {
+    color: violet;
+}
+header a.active::after {
+    width: 100%;
+    background: violet;
+}
 
 
 /*polices texte*/
@@ -121,9 +154,6 @@ nav{
     word-spacing: 45px;
     right: 80px;
     font-size: 20px;
-}
-.accueil{
-    color: var(--mySoftViolet);
     font-family: beyno regular;
 }
 
@@ -444,6 +474,7 @@ margin: 190px;
     left: -60%; 
     font-size: 15px;
     top: -20px;
+    color: black;
     
 }
 
@@ -642,6 +673,7 @@ footer {
 
 /* élément du footer */
 
+
 #footer{
     background-image: url("../background/back_footer.png");
     height: 500px;
@@ -664,8 +696,15 @@ footer {
     left: 180px;
 }
 .pictures:hover{
-    filter: invert(50%) sepia(100%) saturate(7440%) hue-rotate(239deg) brightness(87%) contrast(100%);
+    filter: invert(50%) sepia(50%) saturate(1440%) hue-rotate(239deg) brightness(87%) contrast(100%) ;
 }
+
+
+.logo-header:hover{
+    filter: invert(50%) sepia(50%) saturate(1440%) hue-rotate(239deg) brightness(87%) contrast(100%) ;
+    
+}
+
 .footer-logo:hover {
     transform: scale(1.1);
 }
